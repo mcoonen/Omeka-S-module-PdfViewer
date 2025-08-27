@@ -9,8 +9,8 @@ $dirname = dirname(__DIR__, 2) . '/';
 
 echo 'Updating asset/vendor/pdf.js/web/viewer.css' . PHP_EOL;
 $replacements = [
-    'html {' => '.pdfjs-html {',
-    'body {' => '.pdfjs {',
+    'html{' => '.pdfjs-html{',
+    'body{' => '.pdfjs{',
     'body,'  => '.pdfjs,',
 ];
 $filepath = $dirname . 'asset/vendor/pdf.js/web/viewer.css';
@@ -20,14 +20,14 @@ $content = preg_replace('~^(\s*)(\*|button|input|select)(,| \{)$~m', '$1.pdfjs $
 $content .= "\n/*# sourceMappingURL=viewer.css.map */\n";
 file_put_contents($filepath, $content);
 
-echo 'Updating asset/vendor/pdf.js/web/viewer.js' . PHP_EOL;
+echo 'Updating asset/vendor/pdf.js/web/viewer.mjs' . PHP_EOL;
 $replacements = [
     "value: 'compressed.tracemonkey-pldi-09.pdf'," => 'value: documentUrl,',
     'value: "compressed.tracemonkey-pldi-09.pdf",' => 'value: documentUrl,',
-    "value: '../build/pdf.worker.js'," => "value: '',",
-    'value: "../build/pdf.worker.js",' => "value: '',",
+    "value: './pdf.worker.mjs'," => "value: '',",
+    'value: "./pdf.worker.mjs",' => "value: '',",
 ];
-$filepath = $dirname . 'asset/vendor/pdf.js/web/viewer.js';
+$filepath = $dirname . 'asset/vendor/pdf.js/web/viewer.mjs';
 $content = file_get_contents($filepath);
 $content = str_replace(array_keys($replacements), array_values($replacements), $content);
 file_put_contents($filepath, $content);

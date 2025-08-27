@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77a5ce28a64f2cce2acab581e06260a9",
+    "content-hash": "2ef63b39dfd2a191c926383dccf412c9",
     "packages": [
         {
             "name": "mozilla/pdfjs",
-            "version": "2.7.570",
+            "version": "5.4.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mozilla/pdf.js",
                 "reference": "master"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://github.com/Daniel-KM/Omeka-S-module-PdfViewer/releases/download/3.3.4.2/pdf.js.tar.gz",
-                "reference": "v2.7.570"
+                "type": "zip",
+              "url": "https://github.com/mozilla/pdf.js/releases/download/v5.4.54/pdfjs-5.4.54-dist.zip",
+                "reference": "v5.4.54"
             },
             "type": "library"
         },
@@ -82,5 +82,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.6.0"
 }

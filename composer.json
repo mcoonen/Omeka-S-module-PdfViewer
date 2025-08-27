@@ -25,23 +25,23 @@
             "type": "package",
             "package": {
                 "name": "mozilla/pdfjs",
-                "version": "2.7.570",
+                "version": "5.4.54",
                 "source": {
                     "url": "https://github.com/mozilla/pdf.js",
                     "type": "git",
                     "reference": "master"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://github.com/Daniel-KM/Omeka-S-module-PdfViewer/releases/download/3.3.4.2/pdf.js.tar.gz",
-                    "reference": "v2.7.570"
+                    "type": "zip",
+                    "url": "https://github.com/mozilla/pdf.js/releases/download/v5.4.54/pdfjs-5.4.54-dist.zip",
+                    "reference": "v5.4.54"
                 }
             }
         }
     ],
     "require": {
         "slowprog/composer-copy-file": "~0.3",
-        "mozilla/pdfjs": "^2.7.570"
+        "mozilla/pdfjs": "^5.4.54"
     },
     "autoload": {
         "psr-4": {
